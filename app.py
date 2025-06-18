@@ -13,6 +13,6 @@ demo=gr.Interface(fn=predict,inputs=[gr.Number(label="N"),
                                      gr.Number(label="Temp"),
                                      gr.Number(label="Humidity"),
                                      gr.Number(label="pH"),
-                                     gr.Number(label="Rainfall")],output="This is the recommended crop")
+                                     gr.Number(label="Rainfall")],outputs="This is the recommended crop")
 if(__name__=="__main__"):
     demo.launch()
